@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper" class="game-container">
+        <h1>🎯 Number Guessing Game</h1>
+        <p>Try to guess a random number between <strong>1 and 100</strong>.</p>
+        <p>You have <strong>10 attempts</strong> to find the correct number.</p>
+        
+        <form class="form">
+            <label for="guessField" class="guessLabel">Enter your guess:</label>
+            <input type="number" id="guessField" class="guessField" min="1" max="100" required>
+            <button type="submit" id="subt" class="guessSubmit">Submit Guess</button>
+        </form>
+
+        <div class="resultParas">
+            <p><strong>Previous Guesses:</strong> <span class="guesses">None</span></p>
+            <p><strong>Guesses Remaining:</strong> <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+
+        <button class="button" id="restartGame" style="display: none;">🔄 Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
